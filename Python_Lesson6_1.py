@@ -1,8 +1,8 @@
-num = int(input("Введите число: "))
-count = 0
+count = int(input("Сколько чисел будем вводить: "))
+kol_zerro = 0
+for i in range(count):
+    num = int(input("Введите очередное число:"))
+    if num == 0:
+        kol_zerro += 1
 
-for i in range(1, num+1):
-    if num % i == 0:
-        count += 1
-
-print(f"Количество делителей числа {num} равно {count}")
+print(f"Количество чисел равных нулю - {kol_zerro}")
